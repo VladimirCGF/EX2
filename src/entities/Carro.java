@@ -33,7 +33,7 @@ public class Carro implements Veiculos {
                 velocidade -= velocidade * 0.25;
             }
             velocidade = velocidade + 5;
-            velocidadeKMH += velocidade * (cilindrada * 0.15) - (peso / 300);
+            velocidadeKMH += velocidade * (cilindrada * 0.15) - (Math.floor(peso / 300));
         }
         return velocidadeKMH;
     }
